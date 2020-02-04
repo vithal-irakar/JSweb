@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+    <title>KaiOS Mobile Web Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+    <script type="application/javascript" src="js/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+ </head>
+
+<body>
+  <div class="container fixedPosition">
+      <div class="row">
+          <div class="column middle">
+              <form class="example" action="javascript:void(0);">
+                  <input id="myInput" class="focused" type="text" placeholder="Search.." name="search">
+                  <button type="submit" id="button" class="focused" onclick="loadPage()">
+                      <i class="fa fa-search"></i>
+                  </button>
+              </form>
+          </div>
+          <div class="column right"></div>
+      </div>
+  </div>
+  <div class="content">
+      <div  id="news_feed">
+          <ul id="myUl"></ul>
+      </div>
+      <div id="bodyFrame"></div>
+      <div class="error-container" id="errorPage" style="display: none">
+          <h3>Sorry</h3>
+          <h3>404 - The page cannot be found</h3>
+      </div>
+  </div>
+</body>
+
+</html>

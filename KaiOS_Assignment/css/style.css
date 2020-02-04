@@ -1,0 +1,178 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* The browser window */
+.container {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+}
+
+/* Container for columns and the top "toolbar" */
+.row {
+    padding: 10px;
+    background: #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+}
+
+.left {
+    width: 1%;
+}
+
+.right {
+    width: 1%;
+}
+
+.middle {
+    width: 98%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    overflow: hidden;
+
+}
+
+/* Three dots */
+.dot {
+    margin-top: 4px;
+    height: 6px;
+    width: 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/* Three bars (hamburger menu) */
+.bar {
+    width: 17px;
+    height: 3px;
+    background-color: #aaa;
+    margin: 3px 0;
+    display: block;
+}
+.content{
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+}
+.content #myUl {
+    padding: 0px;
+    margin-top: 50px;
+}
+.content #myUl li {
+    font-size: 12px;
+    list-style: none;
+    margin-bottom: 5px;
+    box-shadow: 0 0 2px;
+    background-color: #ffffff;
+    padding: 12px;
+}
+.content #myUl li .author{
+ color: #5AC05A;
+}
+.content #myUl li .title{
+    font-size: 11px;
+    color: black !important;
+
+}
+.content #myUl li .time{
+    margin-top: 3px;
+    color: #666666;
+    font-size: 10px;
+}
+.truncate {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+a {
+    text-decoration: none;
+    color: transparent;
+}
+form.example input[type=text] {
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 15px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 12px;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-size: 12px;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-size: 12px;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-size: 12px;
+}
+.error-container {
+    color: #fff!important;
+    background-color: #4CAF50!important;
+    padding: 32px 64px;
+    text-align: center;
+}
+#webView1 {
+    overflow: hidden;
+}
+.fixedPosition{
+    top: 0px;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    z-index: 1000000001;
+}
+
+.image_thumbnail{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.focused p {
+    margin: 0px;
+    color: black;
+}
